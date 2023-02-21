@@ -1,6 +1,9 @@
 $font-family-headline: Gauntly, serif;
 $font-family-subhed: Gauntly, serif;
 $font-family-body: JostRegular, sans-serif;
+$font-family-bold: JostBold, sans-serif;
+$font-family-extra: JostExtraBold, sans-serif;
+$font-family-black: JostBlack, sans-serif;
 
 $font-weight-headline: 700;
 $font-weight-body: 400;
@@ -18,4 +21,14 @@ $font-weight-body: 400;
 @font-face {
   font-family: JostLight;
   src: url('../../assets/fonts/Jost-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: JostExtraBold;
+  src: url('../../assets/fonts/Jost-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: JostBlack;
+  src: url('../../assets/fonts/Jost-Black.ttf') format('truetype');
 }

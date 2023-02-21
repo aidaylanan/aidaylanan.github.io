@@ -56,15 +56,25 @@
       {% endfor %}
     </div>
     <h2 id="about">about</h2>
-    <img src="{% static 'assets/images/profile.jpg' %}" alt="Photo of Aida" width=125 />
-      <p>Aida is a data and graphics journalist at the Los Angeles Times.</p>
+      <div class="row">
+        <div class="column left">
+          <img src="{% static 'assets/images/profile.jpg' %}" alt="Photo of Aida" width=125 />
+        </div>
+        <div class="column right">
+          <p>Aida is a data and graphics journalist at the Los Angeles Times. She studied statistics and English at UCLA. She's from Long Beach, CA.</p>
+        </div>
+      </div>
     <h2 id="contact">contact</h2>
     <div>
-      <p>
-        ylanan.aida@gmail.com <br>
-        <a href="https://twitter.com/a1daylanan">twitter</a><br>
-        <a href="https://github.com/aidaylanan/">github</a> <br>
-        <a href="https://www.linkedin.com/in/a1daylanan?original_referer=">linkedin</a></p>
+      <p class="center">
+        <a href="https://twitter.com/a1daylanan">twitter</a> /
+        <a href="https://github.com/aidaylanan/">github</a> /
+        <a href="https://www.linkedin.com/in/a1daylanan?original_referer=">linkedin</a> <br>
+        ylanan.aida@gmail.com 
+      </p>
+    </div>
+    <div class="footnote">
+      <p class="smaller">updated feb 2023</p>
     </div>
   </div>
 </article>

@@ -23,12 +23,14 @@ h1 {
   font-weight: fonts.$font-weight-headline;
   font-size: 50px;
   color: darkgreen;
+  text-align: center;
 }
 
 h2 {
   font-family: fonts.$font-family-subhed;
   font-weight: fonts.$font-weight-headline;
   font-size: 40px;
+  text-align: center;
 }
 
 h3 {
@@ -46,32 +48,8 @@ a:hover {
   color: red;
 }
 
-.card {
-  outline: 2px dotted blue;
-  margin: 10px;
-  padding: 10px;
-}
-
-.card-title {
-  font-size: 16px;
-  text-align: justify;
-  text-justify: auto;
-}
-
-.small {
-  font-size: 14px;
-}
-
-#work {
-  color: red;
-}
-
-#contact {
-  color: #e6c829;
-}
-
-#about {
-  color: blue;
+b {
+  font-family: fonts.$font-family-bold;
 }
 
 p {
@@ -87,11 +65,83 @@ p {
   }
 }
 
+// projects
+
 .card {
   font-family: fonts.$font-family-body;
+  outline: 2px dotted blue;
+  margin: 10px;
+  padding: 10px;
 }
 
 .card-img-top {
   width: 250px;
   margin: 10px auto;
+}
+
+.card-title {
+  font-size: 16px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+// other text
+
+.center {
+  text-align: center;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.smaller {
+  font-size: 12px;
+}
+.footnote {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#work {
+  color: red;
+}
+
+#contact {
+  color: #e6c829;
+}
+
+#about {
+  color: blue;
+}
+
+// about
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
