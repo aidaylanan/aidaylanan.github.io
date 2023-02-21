@@ -22,6 +22,30 @@ h1 {
   font-family: fonts.$font-family-headline;
   font-weight: fonts.$font-weight-headline;
   font-size: 50px;
+  color: darkgreen;
+}
+
+h2 {
+  font-family: fonts.$font-family-subhed;
+  font-weight: fonts.$font-weight-headline;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: fonts.$font-family-subhed;
+  font-size: 35px;
+}
+
+#work {
+  color: red;
+}
+
+#contact {
+  color: gold;
+}
+
+#about {
+  color: blue;
 }
 
 p {

@@ -1,4 +1,5 @@
 $font-family-headline: Gauntly, serif;
+$font-family-subhed: Gauntly, serif;
 $font-family-body: JostRegular, sans-serif;
 
 $font-weight-headline: 700;
@@ -17,9 +18,4 @@ $font-weight-body: 400;
 @font-face {
   font-family: JostLight;
   src: url('../../assets/fonts/Jost-Light.ttf') format('truetype');
-}
-
-h1 {
-  font-family: Gauntly;
-  color: darkgreen;
 }

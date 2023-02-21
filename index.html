@@ -14,27 +14,35 @@
 <article>
   <header class="container">
     <h1>aida ylanan</h1>
-    <img src="{% static 'assets/images/baker.jpg' %}" alt="Baker logo" width=250 />
-  </header>
-  <div class="row" data-masonry='{"percentPosition": true }'>
-    {% for obj in stories %}
-    <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">
-        <a href="{{ obj.url }}">{{ obj.hed }}</a>
-      </h5>
+  </header>  
+
+  <div class="container">
+    <h2 id="work">work</h2>
+    <h3>projects</h3>
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      {% for obj in stories %}
+      <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="{{ obj.url }}">{{ obj.hed }}</a>
+        </h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        {% if obj.role %}<li class="list-group-item">{{ obj.role }} </li>{% endif %}
+        {% if obj.tools %}<li class="list-group-item">{{ obj.tools }}</li>{% endif %}
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
     </div>
-    <ul class="list-group list-group-flush">
-      {% if obj.role %}<li class="list-group-item">{{ obj.role }} </li>{% endif %}
-      {% if obj.tools %}<li class="list-group-item">{{ obj.tools }}</li>{% endif %}
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+    {% endfor %}
     </div>
+    <h3>speaking</h3>
+    <h2 id="about">about</h2>
+    <img src="{% static 'assets/images/profile.jpg' %}" alt="Photo of Aida" width=125 />
+    <h2 id="contact">contact</h2>
   </div>
-  {% endfor %}
-</div>
 </article>
 {% endblock content %}
