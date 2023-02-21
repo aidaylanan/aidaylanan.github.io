@@ -28,11 +28,9 @@
           <a href="{{ obj.url }}">{{ obj.hed }}</a>
         </h5>
       </div>
-      <ul class="list-group list-group-flush">
-        {% if obj.role %}<li class="list-group-item">{{ obj.role }} </li>{% endif %}
-        {% if obj.tools %}<li class="list-group-item">{{ obj.tools }}</li>{% endif %}
-      </ul>
       <div class="card-body">
+        {% if obj.role %}<div class="small"><b>role</b> {{ obj.role }}</div>{% endif %}
+        {% if obj.tools %}<div class="small"><b>tools</b> {{ obj.tools }}</div>{% endif %}
         {% if obj.related %}<div class="small"><b>related</b> {{ obj.related }}</div>{% endif %}
         {% if obj.awards %}<div class="small"><b>recognition</b> {{ obj.awards }}</div>{% endif %}
       </div>

@@ -34,8 +34,23 @@ h2 {
 h3 {
   font-family: fonts.$font-family-subhed;
   font-size: 35px;
+  margin-bottom: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+a:hover {
+  color: red;
+}
+
+.card {
+  outline: 2px dotted blue;
+  margin: 10px;
+  padding: 10px;
+}
 .small {
   font-size: 14px;
 }
