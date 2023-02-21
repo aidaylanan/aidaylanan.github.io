@@ -33,16 +33,26 @@
         {% if obj.tools %}<li class="list-group-item">{{ obj.tools }}</li>{% endif %}
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        {% if obj.related %}<div class="small"><b>related</b> {{ obj.related }}</div>{% endif %}
+        {% if obj.awards %}<div class="small"><b>recognition</b> {{ obj.awards }}</div>{% endif %}
       </div>
     </div>
     {% endfor %}
     </div>
-    <h3>speaking</h3>
+    <h3>talks</h3>
     <h2 id="about">about</h2>
+    <div>
+      <p>Aida is a data and graphics journalist at the Los Angeles Times.</p>
+    </div>
     <img src="{% static 'assets/images/profile.jpg' %}" alt="Photo of Aida" width=125 />
     <h2 id="contact">contact</h2>
+    <div>
+      <p>
+        ylanan.aida@gmail.com <br>
+        <a href="https://twitter.com/a1daylanan">twitter</a><br>
+        <a href="https://github.com/aidaylanan/">github</a> <br>
+        <a href="https://www.linkedin.com/in/a1daylanan?original_referer=">linkedin</a></p>
+    </div>
   </div>
 </article>
 {% endblock content %}
