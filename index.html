@@ -6,43 +6,54 @@
 
 {% block scripts %}
 {% script 'app' %}
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 {% endblock scripts %}
 
 {% block content %}
 <article>
   <header class="container">
-    <h1 class="headline">{{ meta.headline }}</h1>
     <img src="{% static 'assets/images/baker.jpg' %}" alt="Baker logo" width=250 />
-    <div class="attribution">
-        {% set comma = joiner() %}
-        <p class="byline">
-          By {%- for author in meta.byline -%}
-          {% if not loop.last %}{{ comma() }}{% elif not loop.first %} and{% endif %} <span class="author" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="{{ author.url }}">{{ author.name }}</a></span>
-          {%- endfor -%}
-        </p>
-    </div>
   </header>
-  <div class="container">
-    {% for p in copy.body %}
-        <p class="prose">{{ p.value }}</p>
-    {% endfor %}
-    <table class="table">
-        <caption>Wheat production</caption>
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>Yield</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for obj in example %}
-            <tr>
-                <td>{{ obj.year }}</td>
-                <td>{{ obj.wheat }}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    {% for obj in stories %}
+    <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ obj.hed }}</h5>
+      <p class="card-text">{{ obj.url }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      {% if obj.role %}<li class="list-group-item">{{ obj.role }} </li>{% endif %}
+      {% if obj.tools %}<li class="list-group-item">{{ obj.tools }}</li>{% endif %}
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
   </div>
+  {% endfor %}
+</div>
+<div class="container">
+  {% for p in copy.body %}
+      <p class="prose">{{ p.value }}</p>
+  {% endfor %}
+  <table class="table">
+      <caption>Wheat production</caption>
+      <thead>
+          <tr>
+              <th>Year</th>
+              <th>Yield</th>
+          </tr>
+      </thead>
+      <tbody>
+      {% for obj in stories %}
+          <tr>
+              <td>{{ obj.hed }}</td>
+              <td>{{ obj.url }}</td>
+          </tr>
+      {% endfor %}
+      </tbody>
+  </table>
+</div>
 </article>
 {% endblock content %}
