@@ -18,25 +18,35 @@
 
   <div class="container">
     <h2 id="work">work</h2>
-    <h3>projects</h3>
+    <h3>data and graphics</h3>
     <div class="row" data-masonry='{"percentPosition": true }'>
       {% for obj in stories %}
-      <div class="card" style="width: 18rem;">
-      {% if obj.img %}<img src="{% static '/assets/images/bojack.gif' %}" class="card-img-top" alt="...">{% endif %}
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="{{ obj.url }}">{{ obj.hed }}</a>
-        </h5>
+        {% if obj.type == "dev" %}
+        <div class="card" style="width: 18rem;">
+        {% if obj.img %}<img src="{% static '/assets/images/bojack.gif' %}" class="card-img-top" alt="...">{% endif %}
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="{{ obj.url }}">{{ obj.hed }}</a>
+          </h5>
+        </div>
+        <div class="card-body">
+          {% if obj.role %}<div class="small"><b>role</b> {{ obj.role }}</div>{% endif %}
+          {% if obj.tools %}<div class="small"><b>tools</b> {{ obj.tools }}</div>{% endif %}
+          {% if obj.related %}<div class="small"><b>related</b> {{ obj.related }}</div>{% endif %}
+          {% if obj.awards %}<div class="small"><b>recognition</b> {{ obj.awards }}</div>{% endif %}
+        </div>
       </div>
-      <div class="card-body">
-        {% if obj.role %}<div class="small"><b>role</b> {{ obj.role }}</div>{% endif %}
-        {% if obj.tools %}<div class="small"><b>tools</b> {{ obj.tools }}</div>{% endif %}
-        {% if obj.related %}<div class="small"><b>related</b> {{ obj.related }}</div>{% endif %}
-        {% if obj.awards %}<div class="small"><b>recognition</b> {{ obj.awards }}</div>{% endif %}
-      </div>
-    </div>
+      {% endif %}
     {% endfor %}
     </div>
+    
+    <h3>selected writing</h3>
+      {% for obj in stories %}
+        {% if obj.type == "writing" %}
+        <p><a href="{{ obj.url }}">{{ obj.hed }}</a><br>
+        {% if obj.related %}<span class="small">↳ <b>related</b> {{ obj.related }}</span>{% endif %}</p>
+        {% endif %}
+      {% endfor %}  
     <h3>talks</h3>
     <div class="talks">
       {% for obj in talks %}
@@ -46,10 +56,8 @@
       {% endfor %}
     </div>
     <h2 id="about">about</h2>
-    <div>
-      <p>Aida is a data and graphics journalist at the Los Angeles Times.</p>
-    </div>
     <img src="{% static 'assets/images/profile.jpg' %}" alt="Photo of Aida" width=125 />
+      <p>Aida is a data and graphics journalist at the Los Angeles Times.</p>
     <h2 id="contact">contact</h2>
     <div>
       <p>
