@@ -22,7 +22,7 @@
     <div class="row" data-masonry='{"percentPosition": true }'>
       {% for obj in stories %}
       <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+      {% if obj.img %}<img src="{% static '/assets/images/bojack.gif' %}" class="card-img-top" alt="...">{% endif %}
       <div class="card-body">
         <h5 class="card-title">
           <a href="{{ obj.url }}">{{ obj.hed }}</a>
@@ -38,6 +38,13 @@
     {% endfor %}
     </div>
     <h3>talks</h3>
+    <div class="talks">
+      {% for obj in talks %}
+      <p>
+        <b>{{ obj.date }}</b> <a href="{{ obj.url }}">{{ obj.talk }}</a> / {{ obj.host }}
+      </p>
+      {% endfor %}
+    </div>
     <h2 id="about">about</h2>
     <div>
       <p>Aida is a data and graphics journalist at the Los Angeles Times.</p>

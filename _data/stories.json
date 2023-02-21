@@ -162,7 +162,7 @@
     "awards":"",
     "type":"writing"},
     {"hed":"A field guide to BoJack Horseman's Hollywoo",
-    "img":"",
+    "img":"{% static '/assets/images/bojack.gif' %}",
     "desc":"",
     "url":"https://www.latimes.com/projects/netflix-bojack-horseman-finale-guide-to-la/?foo=456",
     "role":"",

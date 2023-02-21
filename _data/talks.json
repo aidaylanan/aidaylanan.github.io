@@ -1,0 +1,26 @@
+[
+    {
+        "date":"mar 2023",
+        "talk":"First Visual Story",
+        "url":"https://www.ire.org/product/nicar23-first-viz-story/",
+        "host":"NICAR"
+    },
+    {
+        "date":"nov 2022",
+        "talk":"Bruins Breaking News: Inside Careers in Journalism",
+        "url":"https://humanities.ucla.edu/career/hcps/events/bruins-breaking-news-inside-careers-in-journalism/",
+        "host": "UCLA Humanities"
+    },
+    {
+        "date":"mar 2021",
+        "talk":"Learning to code: What's holding you back?",
+        "url":"https://twitter.com/palewire/status/1366508503649579009",
+        "host": "NICAR"
+    },
+    {
+        "date":"apr 2018",
+        "talk":"Intro to Data Viz in R",
+        "url":"https://github.com/aidaylanan/how2-dataviz",
+        "host": "UCLA DataFest"
+    }
+]
