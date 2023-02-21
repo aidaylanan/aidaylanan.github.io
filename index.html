@@ -2,6 +2,7 @@
 
 {% block styles %}
 <link rel="stylesheet" href="{% static 'styles/app.scss' %}">
+
 {% endblock styles %}
 
 {% block scripts %}
@@ -12,6 +13,7 @@
 {% block content %}
 <article>
   <header class="container">
+    <h1>aida ylanan</h1>
     <img src="{% static 'assets/images/baker.jpg' %}" alt="Baker logo" width=250 />
   </header>
   <div class="row" data-masonry='{"percentPosition": true }'>
@@ -19,8 +21,9 @@
     <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{ obj.hed }}</h5>
-      <p class="card-text">{{ obj.url }}</p>
+      <h5 class="card-title">
+        <a href="{{ obj.url }}">{{ obj.hed }}</a>
+      </h5>
     </div>
     <ul class="list-group list-group-flush">
       {% if obj.role %}<li class="list-group-item">{{ obj.role }} </li>{% endif %}
@@ -32,28 +35,6 @@
     </div>
   </div>
   {% endfor %}
-</div>
-<div class="container">
-  {% for p in copy.body %}
-      <p class="prose">{{ p.value }}</p>
-  {% endfor %}
-  <table class="table">
-      <caption>Wheat production</caption>
-      <thead>
-          <tr>
-              <th>Year</th>
-              <th>Yield</th>
-          </tr>
-      </thead>
-      <tbody>
-      {% for obj in stories %}
-          <tr>
-              <td>{{ obj.hed }}</td>
-              <td>{{ obj.url }}</td>
-          </tr>
-      {% endfor %}
-      </tbody>
-  </table>
 </div>
 </article>
 {% endblock content %}

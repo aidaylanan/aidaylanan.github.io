@@ -1,6 +1,25 @@
-$font-family-headline: Verdana, sans-serif;
-$font-family-body: Georgia, serif;
-$font-family-table: Arial, sans-serif;
+$font-family-headline: Gauntly, serif;
+$font-family-body: JostRegular, sans-serif;
 
 $font-weight-headline: 700;
 $font-weight-body: 400;
+
+@font-face {
+  font-family: Gauntly;
+  src: url('../../assets/fonts/GauntlyRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: JostRegular;
+  src: url('../../assets/fonts/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: JostLight;
+  src: url('../../assets/fonts/Jost-Light.ttf') format('truetype');
+}
+
+h1 {
+  font-family: Gauntly;
+  color: darkgreen;
+}
