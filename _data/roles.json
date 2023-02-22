@@ -1,0 +1,32 @@
+[
+    {
+        "date":"2019-2021",
+        "talk":"MetPro Fellow",
+        "url":"https://www.latimes.com/",
+        "host":"Los Angeles Times"
+    },
+    {
+        "date":"2018",
+        "talk":"Data Desk Intern",
+        "url":"https://www.latimes.com/",
+        "host": "Los Angeles Times"
+    },
+    {
+        "date":"2016-2018",
+        "talk":"Student Educator",
+        "url":"https://hammer.ucla.edu/",
+        "host": "Hammer Museum"
+    },
+    {
+        "date":"2017",
+        "talk":"Front End Development Intern",
+        "url":"https://ixperience.co/",
+        "host": "Colab"
+    },
+    {
+        "date":"2016",
+        "talk":"Advocacy Team Intern",
+        "url":"https://wao.org.my/",
+        "host": "Women's Aid Organisation"
+    }
+]

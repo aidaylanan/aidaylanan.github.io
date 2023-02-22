@@ -55,6 +55,14 @@
       </p>
       {% endfor %}
     </div>
+    <h3>previous roles</h3>
+    <div class="talks">
+      {% for obj in roles %}
+      <p>
+        <b>{{ obj.date }}</b> {{ obj.talk }} / <a href="{{ obj.url }}">{{ obj.host }}</a>
+      </p>
+      {% endfor %}
+    </div>
     <h2 id="about">about</h2>
       <div class="row">
         <div class="column left">
