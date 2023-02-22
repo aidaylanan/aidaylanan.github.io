@@ -23,7 +23,7 @@
       {% for obj in stories %}
         {% if obj.type == "dev" %}
         <div class="card" style="width: 18rem;">
-        {% if obj.img %}<img src="{% static '/assets/images/bojack.gif' %}" class="card-img-top" alt="...">{% endif %}
+        {% if obj.img %}<img src="{% static 'assets/images/' + obj.img %}" class="card-img-top" alt="...">{% endif %}
         <div class="card-body">
           <h5 class="card-title">
             <a href="{{ obj.url }}">{{ obj.hed }}</a>
@@ -61,7 +61,7 @@
           <img src="{% static 'assets/images/profile.jpg' %}" alt="Photo of Aida" width=125 />
         </div>
         <div class="column right">
-          <p>Aida is a data and graphics journalist at the Los Angeles Times. She studied statistics and English at UCLA. She's from Long Beach, CA.</p>
+          <p>Aida is a data and graphics journalist at the Los Angeles Times. A SoCal native, she grew up in Long Beach and then attended UCLA, where she studied statistics and English. When she's not working, she's at the museum, reading a book, or trying a new recipe.</p>
         </div>
       </div>
     <h2 id="contact">contact</h2>
@@ -69,7 +69,8 @@
       <p class="center">
         <a href="https://twitter.com/a1daylanan">twitter</a> /
         <a href="https://github.com/aidaylanan/">github</a> /
-        <a href="https://www.linkedin.com/in/a1daylanan?original_referer=">linkedin</a> <br>
+        <a href="https://www.linkedin.com/in/a1daylanan?original_referer=">linkedin</a> /
+        <a href="https://www.latimes.com/people/aida-ylanan">latimes</a><br>
         ylanan.aida@gmail.com 
       </p>
     </div>
