@@ -52,6 +52,11 @@ b {
   font-family: fonts.$font-family-bold;
 }
 
+img {
+  margin: auto;
+  display: block;
+}
+
 p {
   font-family: fonts.$font-family-body;
   font-weight: fonts.$font-weight-body;

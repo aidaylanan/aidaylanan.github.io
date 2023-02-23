@@ -24,9 +24,22 @@
         "host": "NICAR"
     },
     {
+        "date":"jan 2020",
+        "talk":"Book Club: Ocean Vuong",
+        "url":"https://www.latimes.com/entertainment-arts/books/story/2020-01-28/ocean-vuong-la-times-book-club-on-earth-were-briefly-gorgeous",
+        "host": "Los Angeles Times"
+    },
+    {
+        "date":"july 2019",
+        "talk":"Book Club: Laila Lalami",
+        "url":"https://www.latimes.com/entertainment-arts/books/story/2019-07-31/laila-lalami-other-americans-book-club-immigration-20190731",
+        "host": "Los Angeles Times"
+    },
+    {
         "date":"apr 2018",
         "talk":"Intro to Data Viz in R",
         "url":"https://github.com/aidaylanan/how2-dataviz",
         "host": "UCLA DataFest"
     }
 ]
+
