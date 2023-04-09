@@ -19,24 +19,33 @@
 }
 
 h1 {
-  font-family: fonts.$font-family-headline;
-  font-weight: fonts.$font-weight-headline;
-  font-size: 50px;
+  // font-family: fonts.$font-family-headline;
+  // font-weight: fonts.$font-weight-headline;
+  // font-size: 50px;
+  font-family: 'BioRhyme Expanded', serif;
+  font-size: 45px;
+  font-weight: 700;
   color: darkgreen;
   text-align: center;
 }
 
 h2 {
-  font-family: fonts.$font-family-subhed;
-  font-weight: fonts.$font-weight-headline;
-  font-size: 40px;
+  // font-family: fonts.$font-family-subhed;
+  // font-weight: fonts.$font-weight-headline;
+  // font-size: 40px;
+  font-family: 'BioRhyme Expanded', serif;
+  font-size: 30px;
+  font-weight: 300;
   text-align: center;
   margin-bottom: 0px;
 }
 
 h3 {
-  font-family: fonts.$font-family-subhed;
-  font-size: 35px;
+  // font-family: fonts.$font-family-subhed;
+  // font-size: 35px;
+  font-family: 'BioRhyme Expanded', serif;
+  font-size: 25px;
+  font-weight: 300;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -51,7 +60,9 @@ a:hover {
 }
 
 b {
-  font-family: fonts.$font-family-bold;
+  // font-family: fonts.$font-family-bold;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
 }
 
 img {
@@ -60,8 +71,10 @@ img {
 }
 
 p {
-  font-family: fonts.$font-family-body;
-  font-weight: fonts.$font-weight-body;
+  // font-family: fonts.$font-family-body;
+  // font-weight: fonts.$font-weight-body;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
   &.byline {
     text-transform: uppercase;
     font-size: 14px;
@@ -75,7 +88,8 @@ p {
 // projects
 
 .card {
-  font-family: fonts.$font-family-body;
+  // font-family: fonts.$font-family-body;
+  font-family: 'Josefin Sans', sans-serif;
   outline: 2px dotted blue;
   margin: 10px;
   padding: 10px;
@@ -119,7 +133,8 @@ p {
   align-items: center;
   margin-top: 0px;
   padding-top: 30px;
-  font-family: fonts.$font-family-body;
+  // font-family: fonts.$font-family-body;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 // other text
