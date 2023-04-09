@@ -29,7 +29,7 @@
                 {% for obj in stories %}
                   {% if obj.type == "dev" %}
                   <div class="card">
-                  {% if obj.img %}<a class='outlink' href="{{ obj.url }}"><img src="{% static 'assets/images/' + obj.img %}" class="card-img-top" alt="..."></a>{% endif %}
+                  {% if obj.img %}<a class='outlink' href="{{ obj.url }}"><img src="{% static 'assets/images/' + obj.img %}" class="card-img-top" alt="{{ obj.desc }}"></a>{% endif %}
                   <div class="card-body">
                     <h5 class="card-title">
                       <a class='outlink' href="{{ obj.url }}">{{ obj.hed }}</a>
