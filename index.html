@@ -17,6 +17,7 @@
 <article>
   <header class="container" style="margin-bottom:0px;">
     <h1 style="margin-bottom:0px;">aida ylanan</h1>
+    <p class="center">data and graphics journalist @ los angeles times</p>
   </header>  
 
   <div class="container" style="margin-bottom:0px;">
@@ -25,11 +26,11 @@
     <div id="module" class="container" style="margin-top:0px;">
     <h3>data and graphics</h3>
     <div class="collapse" id="collapseExample" aria-expanded="false">
-              <div class="row" data-masonry='{"percentPosition": true }'>
+              <div class="row grid" data-masonry='{"percentPosition": true }'>
                 {% for obj in stories %}
                   {% if obj.type == "dev" %}
                   <div class="card">
-                  {% if obj.img %}<img src="{% static 'assets/images/' + obj.img %}" class="card-img-top" alt="...">{% endif %}
+                  {% if obj.img %}<a class='outlink' href="{{ obj.url }}"><img src="{% static 'assets/images/' + obj.img %}" class="card-img-top" alt="..."></a>{% endif %}
                   <div class="card-body">
                     <h5 class="card-title">
                       <a class='outlink' href="{{ obj.url }}">{{ obj.hed }}</a>
@@ -96,7 +97,7 @@
       </p>
     </div>
     <div class="footnote">
-      <p class="smaller">updated feb 2023</p>
+      <p class="smaller">updated april 2023</p>
     </div>
   </div>
 </article>
