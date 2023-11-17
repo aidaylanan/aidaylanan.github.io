@@ -1,4 +1,11 @@
 [
+    {"hed":"Inside the world’s largest AIDS charity’s troubled move into homeless housing",
+    "img":"ahf-skid-row.png",
+    "desc":"A choropleth map of a neighborhood in Skid Row that shows how AHF-owned buildings receive some of the highest numbers of complaints compared to similar residential buildings in the area.",
+    "url":"https://www.latimes.com/homeless-housing/story/2023-11-16/aids-healthcare-foundation-low-income-housing-landlords",
+    "role":"data analysis, visualization",
+    "tools":"Python, QGIS, Adobe Illustrator, ai2html, Datawrapper",
+    "type":"dev"},
     {"hed":"How powerful land barons shaped the epic floods in California’s heartland",
     "img":"land-barons.jpg",
     "desc":"A terrain map of the historic Tulare lakebed and surrounding areas that illustrates the land holdings of the Boswell Company, which owns about 44% of the lakebed.",
