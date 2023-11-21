@@ -13,7 +13,7 @@ name: This is not a name
 url: https://www.latimes.com/people/nobody
 []
 
-pub_date: 2099-12-31 23:58:00
+pub_date: 2023-11-21 05:00:00
 update_date:
 
 seo_headline: Aida Ylanan
@@ -22,4 +22,4 @@ seo_description: Aida is a data and graphics journalist at the Los Angeles Times
 social_headline: Aida Ylanan
 social_description: Aida is a data and graphics journalist at the Los Angeles Times.
 
-social_image: assets/images/baker.jpg
+social_image: assets/images/social-share.png
