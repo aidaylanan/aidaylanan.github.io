@@ -55,7 +55,7 @@
     <h3>selected writing</h3>
       {% for obj in stories %}
         {% if obj.type == "writing" %}
-        <p><a href="{{ obj.url }}">{{ obj.hed }}</a><br>
+        <p><a href="{{ obj.url }}">{{ obj.hed }}</a> <span class="small">{% if obj.otherpub %}({{ obj.otherpub }}){% endif %}<br> </span>
         {% if obj.related %}<span class="small">↳ <b>related</b> {{ obj.related }}</span>{% endif %}</p>
         {% endif %}
       {% endfor %}  
@@ -96,7 +96,7 @@
       </p>
     </div>
     <div class="footnote">
-      <p class="smaller">updated november 2023</p>
+      <p class="smaller">updated may 2024</p>
     </div>
   </div>
 </article>

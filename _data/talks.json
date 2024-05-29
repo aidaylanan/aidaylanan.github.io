@@ -1,5 +1,23 @@
 [
     {
+        "date":"may 2024",
+        "talk":"Exploring AAPI data in Southern California",
+        "url":"https://www.eventbrite.com/e/culture-migration-politics-lets-explore-aapi-data-in-socal-tickets-899428885007",
+        "host":"Los Angeles Times, AAJA-LA, AAPI Data"
+    },
+    {
+        "date":"may 2024",
+        "talk":"Data Studio mentorship program",
+        "url":"https://github.com/jsoma/data-studio-projects-2024",
+        "host":"Columbia Journalism School"
+    },
+    {
+        "date":"march 2024",
+        "talk":"First Visual Story",
+        "url":"https://www.ire.org/product/nicar24-first-visual-story-pre-registered-attendees-only/",
+        "host":"Investigative Reporters & Editors (NICAR)"
+    },
+    {
         "date":"may 2023",
         "talk":"ASA DataFest Judge",
         "url":"http://datafest.stat.ucla.edu/2023-asa-datafesttm/sponsors-2023/",
@@ -9,7 +27,7 @@
         "date":"mar 2023",
         "talk":"First Visual Story",
         "url":"https://www.ire.org/product/nicar23-first-viz-story/",
-        "host":"NICAR"
+        "host":"Investigative Reporters & Editors (NICAR)"
     },
     {
         "date":"nov 2022",
@@ -21,13 +39,13 @@
         "date":"july 2022",
         "talk":"Go For Broke Summer Journalism Institute",
         "url":"https://rafu.com/2022/09/go-for-broke-aaja-la-celebrate-inaugural-journalism-institute-for-students/",
-        "host": "AAJA-LA"
+        "host": "AAJA-LA, Go For Broke National Education Center"
     },
     {
         "date":"mar 2021",
         "talk":"Learning to code: What's holding you back?",
         "url":"https://twitter.com/palewire/status/1366508503649579009",
-        "host": "NICAR"
+        "host": "Investigative Reporters & Editors (NICAR)"
     },
     {
         "date":"jan 2020",
@@ -45,7 +63,7 @@
         "date":"apr 2018",
         "talk":"Intro to Data Viz in R",
         "url":"https://github.com/aidaylanan/how2-dataviz",
-        "host": "UCLA DataFest"
+        "host": "UCLA Statistics (DataFest)"
     }
 ]
 
