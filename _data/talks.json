@@ -1,4 +1,9 @@
-[
+[{
+    "date":"mar 2025",
+    "talk":"First Visual Story",
+    "url":"https://www.ire.org/product/nicar25-first-visual-story/",
+    "host":"Investigative Reporters & Editors (NICAR)"
+},
     {
         "date":"may 2024",
         "talk":"Exploring AAPI data in Southern California",
@@ -12,7 +17,7 @@
         "host":"Columbia Journalism School"
     },
     {
-        "date":"march 2024",
+        "date":"mar 2024",
         "talk":"First Visual Story",
         "url":"https://www.ire.org/product/nicar24-first-visual-story-pre-registered-attendees-only/",
         "host":"Investigative Reporters & Editors (NICAR)"
